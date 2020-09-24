@@ -6,3 +6,14 @@
 
 import readlineSync from 'readline-sync'
 import chalk from 'chalk'
+
+const guessNumber = () => {
+    let number = readlineSync.question('guess a number ?')
+    let secretNumber = process.argv[2]
+
+    if (isNaN(number)) {
+        console.log('')
+    }
+}
+
+guessNumber()

@@ -27,13 +27,11 @@ const interMajotiry = () => {
         process.exit(1)
     } else if (age < majotiryAge) {
         console.log(
-            `Désolé, ${firstName} ${lastName}, vous êtes mineur, vous ne pouvez pas voter`
+            `Sorry, ${firstName} ${lastName}, you are a minor, you cannot vote`
         )
         process.exit(1)
     } else
-        console.log(
-            `${firstName} ${lastName}, vous êtes majeur, vous pouvez voter`
-        )
+        console.log(`${firstName} ${lastName}, you are an adult, you can vote`)
     process.exit(1)
 }
 let majotiryAge = Number(process.argv[2])

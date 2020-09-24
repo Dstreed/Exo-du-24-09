@@ -21,13 +21,11 @@ const majotiry = () => {
         process.exit(1)
     } else if (age < 18) {
         console.log(
-            `Désolé, ${firstName} ${lastName}, vous êtes mineur, vous ne pouvez pas voter`
+            `Désolé, ${firstName} ${lastName}, you are a minor, you cannot vote`
         )
         process.exit(1)
     } else
-        console.log(
-            `${firstName} ${lastName}, vous êtes majeur, vous pouvez voter`
-        )
+        console.log(`${firstName} ${lastName}, you are an adult, you can vote`)
     process.exit(1)
 }
 
